@@ -1,6 +1,6 @@
 const input = document.querySelector("#validation-input");
 
-const inputCallback = (evt) => {
+const onNameInput = (evt) => {
   if (evt.currentTarget.value.length === Number(input.dataset.length)) {
     input.classList.replace("invalid", "valid");
   } else {
@@ -8,4 +8,4 @@ const inputCallback = (evt) => {
   }
 };
 
-input.addEventListener("blur", inputCallback);
+input.addEventListener("blur", onNameInput);

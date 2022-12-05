@@ -16,6 +16,7 @@ const images = [
 const gallery = document.querySelector(".gallery");
 gallery.style.display = "flex";
 gallery.style.gap = "10px";
+gallery.style.listStyle = "none";
 
 const markup = images
   .map((image) => {
@@ -24,5 +25,4 @@ const markup = images
   })
   .join();
 
-console.log(markup);
 gallery.insertAdjacentHTML("beforeend", markup);
